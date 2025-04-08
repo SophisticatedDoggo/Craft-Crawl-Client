@@ -40,7 +40,7 @@ header {
   display: none;
   font-size: 1.8rem;
   background: none;
-  color: #000000;
+  color: #003c25;
   border: none;
   cursor: pointer;
 }
@@ -117,7 +117,7 @@ img.logo {
     position: absolute;
     top: 100px;
     right: 1rem;
-    background-color: #f1eed4;
+    background-color: #003c25;
     padding: 1rem;
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
@@ -136,5 +136,6 @@ img.logo {
     display: block;
     width: 100%;
     padding: 0.5rem 1rem;
+    color: #f1eed4;
   }
 }
