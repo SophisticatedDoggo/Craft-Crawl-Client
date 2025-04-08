@@ -4,26 +4,33 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Craft Crawl</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script defer src="js/script.js"></script>
 </head>
 <body>
   <header>
-    <h1>Craft Crawl</h1>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">Explore</a>
-      <a href="#">Events</a>
-      <a href="#">Login</a>
-    </nav>
+    <nav class="navbar">
+      <div class="nav-header">
+        <a href="#"><img class="logo" src="images/CC_Logo.png" alt="Craft Crawl Logo"></a>
+    
+        <div class="right-nav">
+          <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">☰</button>
+          <ul class="nav-links">
+            <li><a href="#">Explore</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Login</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>           
   </header>
-
+  <section class="picture bella"></section>
   <main>
     <section id="featured">
       <h2>Featured Spots</h2>
       <div id="locations-container"></div>
     </section>
   </main>
-
-  <script src="script.js"></script>
 </body>
 </html>

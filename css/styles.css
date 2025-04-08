@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* ========== BASE STYLES ========== */
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f1eed4;
+}
+
+header {
+  background-color: #f1eed4;
+  padding: 0;
+}
+
+.navbar {
+  background-color: #f1eed4;
+  font-size: 28px;
+  width: 100%;
+}
+
+/* Main nav container */
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  width: 100%;
+}
+
+/* Right-side container */
+.right-nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Hamburger button */
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  background: none;
+  color: #000000;
+  border: none;
+  cursor: pointer;
+}
+
+/* Nav links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 4rem;
+}
+
+.nav-links li {
+  padding: 0 1rem 2rem 0.5rem;
+}
+
+.nav-links a {
+  color: #003c25;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+nav a:hover {
+  color: #008736;
+}
+
+/* Logo Image */
+img.logo {
+  height: 169px;
+  width: 187px;
+}
+
+/* ========== MAIN CONTENT ========== */
+
+#featured {
+  padding: 2rem;
+}
+
+#locations-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* ========== BACKGROUND IMAGE SECTION ========== */
+.picture {
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-width: 100%;
+  height: 60rem;
+  margin-bottom: 1rem;
+}
+
+.bella {
+  background-image: url(/images/Bella-Terra-Hunker.jpeg);
+}
+
+/* ========== MEDIA QUERIES ========== */
+
+@media all and (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    font-size: 4rem;
+    padding-right: 4rem;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    position: absolute;
+    top: 100px;
+    right: 1rem;
+    background-color: #f1eed4;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links li {
+    width: 100%;
+  }
+
+  .nav-links a {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 1rem;
+  }
+}
